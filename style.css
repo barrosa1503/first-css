@@ -25,6 +25,9 @@ header{
 	margin: 0 auto;	
 }
 
+.container_max{
+	width: 100%;
+}
 .header_name{
 	display: flex;
 	justify-content: space-between;
@@ -46,6 +49,12 @@ header{
 a{
 	color: white;
 	text-decoration: none;
+}
+
+span{
+	color: #4a8299;
+	font-weight: 1000;
+	font-size: 18px;
 }
 
 .nav{
@@ -84,27 +93,31 @@ a{
 
 .move_right{
 	position: absolute;
-	color: blue;
+	color: white;
 	font-size: 80px;
 	margin-top:250px;
 	right: 0;
 }
 
-.move_left{
-	position: absolute;
-	color: blue;
-	font-size:80px;
-	margin-top:250px;
-
+.move_right:hover{
+	cursor: pointer;
 }
 
-.move_right:hover, .move_left:hover{
+.move_left{
+	position: absolute;
+	color: white;
+	font-size:80px;
+	margin-top:250px;
+	left: 30%;
+}
+
+.move_left:hover{
 	cursor: pointer;
 }
 
 .main_part{
-	width: 45%;
-	right: 0;
+	width: 51%;
+	right: 40px;
 	position: absolute;
 }
 
@@ -113,48 +126,56 @@ a{
 	text-transform: uppercase;
 	font-size: 40px;
 	font-weight: bold;
-	margin-top: 160px;	
+	margin-top: 120px;	
+	margin-right: 105px;
+	color: white;
+}
+
+.main_part p span{
+	font-size: 55px;
 }
 
 .main_part p:nth-child(2){
+	width: 80%;
 	text-align: center;
 	font-size: 18px;
-	margin-top: 32px;
+	margin-top: 30px;
 	line-height: 1.5em;
 	word-spacing: 0.4em;
+	color: white;
 }
 
 .main_button{
-	width: 290px;
-	height: 60px;
+	width: 250px;
+	height: 58px;
 	font-size: 24px;
 	letter-spacing: 0.1em;
 	margin: 30px 0 0 100px;
-	border-radius: 12px;
+	border-radius: 25px;
 	text-transform: uppercase;
 	border:none;
 }
 
 .main_button:hover{
 	cursor: pointer;
-	background-color: grey;
+	background-color: #4a8299;
 	color: white;
 
 }
 
-.color_seashell{
-	background-color: #FFF5EE;
+.color_back{
+	background-color: white;
 	height: 720px;
 	margin-top: 20px;
 }
 .header_section{
-	color: #696969;
+	color: #434343;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	padding-top: 40px;	
-	border-bottom: 8px solid #A52A2A; 
+	border-bottom: 8px solid #4a8299; 
 	width: 320px;
-	}
+}
 
 .header_section p {
 	font-size: 22px;
@@ -174,7 +195,7 @@ a{
 	width: 31%;
 	height: 500px;
 	text-align: center;
-	color: #A52A2A;
+	color: #4a8299;
 	background-color: white;
 	border: 2px solid lightgrey;
 	transition: all 0.6s ease-in-out;
@@ -234,6 +255,7 @@ a{
 .price_description_box{
 	margin-top: 32px;
 }
+
 .price_description{
 		height: 45px;
 		font-size: 25px;
@@ -254,29 +276,29 @@ a{
 	font-size: 16px;
 	text-transform: uppercase;
 	color: white;
-	background-color: #A52A2A;
+	background-color: #4a8299;
 }
 
 .price_button:hover{
 	background-color: grey;
 	cursor: pointer;
-	color: #A52A2A;
+	color: #497299;
 }
 .price_field.second_field{
 	position: relative;
 	width: 31%;
 	height: 500px;
 	text-align: center;
-	color: #A52A2A;
-	background-color: #A52A2A;
+	color: #4a8299;
+	background-color: #4a8299;
 	border: 2px solid lightgrey;
 	transition: all 0.6s ease-in-out;
 	margin-top: 50px;
 }
 
-.brown_color{
-	background-color: #A52A2A;
-	border-color: #A52A2A;
+.blue_color{
+	background-color: #4a8299;
+	border-color: #4a8299;
 }
 
 .white_color{
@@ -286,7 +308,7 @@ a{
 .price_button.button_two{
 	margin-top: 60px;
 	background-color: white;
-	color: #A52A2A;;
+	color: #4a8299;;
 }
 .price_button.button_two:hover{
 	background-color: grey;
@@ -299,11 +321,11 @@ a{
 
 .message{
 	height: 580px;
-	background: -moz-linear-gradient(to right bottom, #B9F8FF 0%,#99D8DF 47%,#498882 100%);
-	background: -webkit-linear-gradient(to right bottom, #B9F8FF 0%,#99D8DF 47%,#498882 100%);
-	background: -o-linear-gradient(to right bottom, #B9F8FF 0%,#99D8DF 47%,#498882 100%);
-	background: -ms-linear-gradient(to right bottom, #B9F8FF 0%,#99D8DF 47%,#498882 100%);
-	background: linear-gradient(to right bottom, #B9F8FF 0%,#99D8DF 47%,#498882 100%);
+	background: -moz-linear-gradient(to bottom right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+	background: -webkit-linear-gradient(to bottom right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+	background: -o-linear-gradient(to bottom right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+	background: -ms-linear-gradient(to bottom right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+	background: linear-gradient(to bottom right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
 
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -319,12 +341,11 @@ a{
 .say_hello_part{
 	width: 50%;
 	margin-top: 25px;
-	color: #A52A2A;
+	color: #4a8299;
 	font-size: 75px;
 	text-align: left;
-
-
 }
+
 .message_part{
 	width: 50%;
 }
@@ -335,7 +356,7 @@ a{
 	padding-left: 20px;
 	font-size: 30px;
 	
-	border: 1px solid #A52A2A;
+	border: 1px solid #4a8299;
 }
 
 .message_part textarea{
@@ -344,7 +365,7 @@ a{
 	padding-left: 20px;
 	padding-top: 15px;
 	font-size: 30px;
-	border: 1px solid #A52A2A;
+	border: 1px solid #4a8299;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -363,10 +384,10 @@ a{
 .submit_form{
 	margin-top: 25px;
 	margin-left: 150px;
-	height: 70px;
+	height: 55px;
 	width:  40%;
-	border: 1px solid #A52A2A;
-	background-color: #A52A2A;
+	border: 1px solid #4a8299;
+	background-color: #4a8299;
 	border-radius: 15px;
 	color: white;
 	font-size: 30px;
@@ -377,12 +398,12 @@ a{
 .submit_form:hover{
 	cursor: pointer;
 	background-color: white;
-	color: #A52A2A;
+	color: #4a8299;
 	border: none;
 }
 
 .footer_box{
-	margin-top: 50px;
+	margin-top: 25px;
 	height: 50px;
 	font-size: 16px;
 	display: flex;
@@ -408,37 +429,37 @@ footer .footer_box .copyright{
 }
 .media:hover{
 	cursor: pointer;
-	transform: scale(1.1);	
+	transform: scale(1.2);	
 }
 
-.media_vimeo{
-	background-image: url("img/vimeo.png");
+.facebook{
+	background-image: url("img/facebook.png");
+	background-size: 35px;
 }
 
-.media_flickr{
-	background-image: url("img/flickr.png");
-}
-
-.media_twitter{
+.twitter{
 	background-image: url("img/twitter.png");
+	background-size: 35px;
 }
 
-.media_pinterest{
-	background-image: url("img/pinterest.png");
+.instagram{
+	background-image: url("img/instagram.jpg");
+	background-size: 35px;
+}
+
+.footer_logo{
+	width: 300px;
+	padding-left: 60px;
 }
 
 .footer_box .footer_logo p{
-	width: 200px;
 	font-size: 20px;
 	color: gray;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
-	margin-left: 50px;	
+	text-align: center;
 }
 .footer_box .footer_logo:hover{
 	cursor: pointer;
 }
-
-
-
