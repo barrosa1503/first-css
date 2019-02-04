@@ -1,6 +1,4 @@
 
-
-
 *{
 	margin: 0;
 	padding: 0;
@@ -22,9 +20,8 @@ header{
 	margin: 0 auto;
 }
 
-.container_big{
-	height: 600px;	
-	width: 1400px;
+.container_big{	
+	width: 1200px;
 	margin: 0 auto;	
 }
 
@@ -77,6 +74,7 @@ a{
 .first_part{
 	background: url("img/training.jpg") no-repeat 50% 35%;
 	background-size: cover;	
+	height: 600px;
 }
 
 .box{
@@ -143,3 +141,161 @@ a{
 	color: white;
 
 }
+
+.color_seashell{
+	background-color: #FFF5EE;
+	height: 720px;
+	margin-top: 20px;
+}
+.header_price_list{
+	color: #696969;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-top: 40px;	
+	border-bottom: 8px solid #A52A2A; 
+	width: 320px;
+	}
+
+.header_price_list p {
+	font-size: 22px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+.flexbox{
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 80px;
+	justify-content: space-between;
+}
+
+.price_field{
+	position: relative;
+	width: 31%;
+	height: 500px;
+	text-align: center;
+	color: #A52A2A;
+	background-color: white;
+	border: 2px solid lightgrey;
+	transition: all 0.6s ease-in-out;
+	margin-top: 50px;
+}
+
+.price_field:hover{
+	transform: scale(1.1);
+}
+
+.price_field h1{
+	text-transform: uppercase;
+	margin-top:30px;
+    margin-bottom: 26px;
+}
+
+.circle{
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	background-color: white;
+	border: 2px solid lightgrey;
+	border-radius: 50%;
+	top: -29px;
+	left: 130px;
+
+}
+
+.small_circle{
+	width: 25px;
+	height: 25px;
+	background-color: lightgrey;
+	border-radius: 50%;
+	margin:13px;
+}
+
+.price_field .price{
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	border: 2px solid lightgrey;
+	margin-left: 28%;
+	padding-top: 25px;
+	color: 	grey;
+	background-color: white;
+}
+
+.price p:first-child{
+	font-size: 45px;
+	font-weight: bold;
+}
+
+.price sup{
+	font-size: 15px;
+}
+
+.price_description_box{
+	margin-top: 32px;
+}
+.price_description{
+		height: 45px;
+		font-size: 25px;
+		color: grey;
+		background-color: #EAEAEA;
+		padding: 8px;
+}
+.light_price{
+	background-color: #F5F5F5;
+}
+
+.price_button{
+	margin-top: 105px;
+	border-radius: 10px;
+	width: 125px;
+	height: 35px;
+	border: none;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: white;
+	background-color: #A52A2A;
+}
+
+.price_button:hover{
+	background-color: grey;
+	cursor: pointer;
+	color: #A52A2A;
+}
+.price_field.second_field{
+	position: relative;
+	width: 31%;
+	height: 500px;
+	text-align: center;
+	color: #A52A2A;
+	background-color: #A52A2A;
+	border: 2px solid lightgrey;
+	transition: all 0.6s ease-in-out;
+	margin-top: 50px;
+}
+
+.brown_color{
+	background-color: #A52A2A;
+	border-color: #A52A2A;
+}
+
+.white_color{
+	background-color: white;	
+}
+
+.price_button.button_two{
+	margin-top: 60px;
+	background-color: white;
+	color: #A52A2A;;
+}
+.price_button.button_two:hover{
+	background-color: grey;
+	color: white;
+}
+
+.price_button.button_third{
+	margin-top: 15px;
+}
+
+
+
